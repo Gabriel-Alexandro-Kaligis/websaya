@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration and Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>User Registration and Survey Form</h1>
+
+<form action="process.php" method="POST">
+
+    <fieldset>
+        <legend>User Information</legend><br>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="John Doe" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="john@example.com" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required><br>
+        <input type="hidden" id="hidden" name="hidden" value="2581026"><br>
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <legend>Survey Information</legend>
+        <label for="gender-male">Male:</label>
+        <input type="radio" id="gender-male" name="gender" value="male"><br>
+        <label for="gender-female">Female:</label>
+        <input type="radio" id="gender-female" name="gender" value="female"><br><br>
+
+        <label for="age">Age:</label>
+        <input type="text" size="4" id="age" name="age" required><br><br>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color" value="#000000" required><br><br>
+        <label>Select Your Hobbies:</label><br>
+        <input type="checkbox" id="reading" name="hobbies" value="reading">
+        <label for="reading">Reading</label><br>
+        <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+        <label for="traveling">Traveling</label><br><br>
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <legend>Scheduling Preferences</legend>
+        <label for="meeting">Preferred Meeting Date and Time:</label>
+        <input type="datetime-local" id="meeting" name="meeting" required><br><br>
+        <label for="delivery-week">Select Week for Delivery:</label>
+        <input type="week" id="delivery-week" name="delivery-week" required><br><br>
+        <label for="project-month">Preferred Month for Project:</label>
+        <input type="month" id="project-month" name="project-month" required><br><br>
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <legend>Profile Picture</legend>
+        <label for="profile">Upload Profile Picture:</label>
+        <input type="file" id="profile" name="profile"><br><br>
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <legend>Actions</legend>
+        <input type="submit" value="Submit Form"><br><br>
+        <input type="reset" value="Reset Form">
+    </fieldset>
+
+</form>
+
+</body>
+</html>

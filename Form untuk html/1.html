@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration and Survey Form</title>
+</head>
+<body>
+
+<h1>Registration and Survey Form</h1>
+
+<form>
+
+  <fieldset>
+    <legend>User Information</legend>
+
+    <p>
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" placeholder="John Doe">
+    </p>
+
+    <p>
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="john@example.com">
+    </p>
+
+    <p>
+      <label for="password">Password:</label>
+      <input type="password" id="password">
+    </p>
+
+    <p>
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" placeholder="123-456-7890">
+      <input type="hidden" id="hidden" name="hidden" value="2581026">
+    </p>
+  </fieldset>
+
+  <fieldset>
+    <legend>Survey Information</legend>
+
+    <p> 
+        <label for="gender">Gender:</label><br>
+      <label for="male">Male:</label>
+      <input type="radio" id="male" name="gender"><br>
+
+      <label for="female">Female:</label>
+      <input type="radio" id="female" name="gender">
+    </p>
+
+    <p>
+      <label for="age">Age:</label>
+      <input type="number" id="age">
+    </p>
+
+    <p>
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob">
+    </p>
+
+    <p>
+      <label for="color">Favorite Color:</label>
+      <input type="color" id="color" value="#000000">
+    </p>
+
+    <p>Select Your Hobbies:</p>
+    <p>
+      <input type="checkbox" id="reading">
+      <label for="reading">Reading</label>
+    </p>
+    <p>
+      <input type="checkbox" id="traveling">
+      <label for="traveling">Traveling</label>
+    </p>
+  </fieldset>
+
+  <fieldset>
+    <legend>Scheduling Preferences</legend>
+
+    <p>
+      <label for="meeting">Preferred Meeting Date and Time:</label>
+      <input type="datetime-local" id="meeting">
+    </p>
+
+    <p>
+      <label for="delivery-week">Select Week for Delivery:</label>
+      <input type="week" id="delivery-week">
+    </p>
+
+    <p>
+      <label for="project-month">Preferred Month for Project:</label>
+      <input type="month" id="project-month">
+    </p>
+  </fieldset>
+
+  <fieldset>
+    <legend>Profile Picture</legend>
+    <p>
+      <label for="picture">Upload Profile Picture:</label>
+      <input type="file" id="picture">
+    </p>
+  </fieldset>
+
+  <fieldset>
+    <legend>Actions</legend>
+    <p>
+      <button type="submit">Submit Form</button><br><br>
+      <button type="reset">Reset Form</button>
+    </p>
+  </fieldset>
+
+</form>
+
+</body>
+</html>
